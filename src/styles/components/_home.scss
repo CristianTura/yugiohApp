@@ -1,0 +1,53 @@
+
+.home__container-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+
+    img{
+        width: 50%;
+    }
+
+    .home__tilte-banner {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $titles
+    }
+}
+
+main {
+    background-color: $cards-pink-light;
+    width: 100%;
+    padding: 30px 1%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0px -5px 10px $cards-pink-light;
+    min-height: 80vh;
+}
+
+.home__btn-pages {
+    background-color: $cards-pink-light;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 10px 0 50px;
+
+}
+
+.home__btn-pages-prev, .home__btn-pages-next {
+    background-color: $buttons;
+    cursor: pointer;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+
+    &:hover {
+        background-color: $buttons-hover;
+    }
+}
